@@ -11,12 +11,12 @@ def send_welcome(message):
 
 
 @bot.message_handler(commands=["how"])
-def send_message(message):
+def send_welcome(message):
   bot.send_message(message, "How")
   
   
 @bot.message_handler(commands=["hello"])
-def send_message(message):
+def send_welcome(message):
   bot.send_message(message, "hello ඔබව සාදරයෙන් පිලිගන්නවා මගේ chat BOT වෙත")
 
 
