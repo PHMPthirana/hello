@@ -14,9 +14,13 @@ def send_welcome(message):
 def send_welcome(message):
   bot.reply_to(message, "Hello! ඔබව සාදරයෙන් පිලිගන්නවා මගේ chat BOT වෙත")
 
-@bot.message_handler(message=["hello"])
-def send_welcome(message):
-  bot.reply_to(message, "Hello! ඔබව සාදරයෙන් පිලිගන්නවා මගේ chat BOT වෙත")
+@bot.message_handler(commands=["hey"])
+def send_message(message):
+    bot.send_message(message.chat.id,"Hello ! I'm Good")
+
+@bot.message_handler(commands=["himesh"])
+def send_message(message):
+    bot.send_message(message.chat.id,"හරි හරි මම දන්නව ඔයා හිමේෂ කියල <br> ඔන්න reply නොවෙන්න දැම්ම")
   
 bot.polling()
 
