@@ -22,5 +22,9 @@ def send_message(message):
 def send_message(message):
     bot.send_message(message.chat.id,"හරි හරි මම දන්නව ඔයා හිමේෂ කියල <br> ඔන්න reply නොවෙන්න දැම්ම")
   
+@bot.message_handler(commands=["photo"])
+def sending_photo(message):
+    bot.send_photo(message.chat_id, "https://t.me/UvinduBr/7790")
+    
 bot.polling()
 
