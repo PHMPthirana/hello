@@ -24,7 +24,7 @@ def send_message(message):
   
 @bot.message_handler(commands=["photo"])
 def sending_photo(message):
-    bot.send_photo(message.chat_id, "https://t.me/UvinduBr/7790")
+    bot.send_photo(message.chat_id, "https://telegra.ph/Hi-11-08-89")
     
 bot.polling()
 
