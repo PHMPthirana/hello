@@ -27,5 +27,9 @@ def send_message(message):
 def sending_photo(message):
     bot.send_photo(message.chat.id, "https://telegra.ph/file/04d1140733986a224f328.jpg", caption="I'm Harshila Malith Chat bot \n තාම හදනවා")
     
+@bot.message_handler(commands=["photo"])
+def sending_document(message):
+    bot.send_document(message.chat.id, "https://netfile2link.herokuapp.com/106334")
+    
 bot.polling()
 
