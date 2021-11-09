@@ -20,11 +20,12 @@ def send_message(message):
 
 @bot.message_handler(commands=["himesh"])
 def send_message(message):
-    bot.send_message(message.chat.id,"හරි හරි මම දන්නව ඔයා හිමේෂ කියල <br> ඔන්න reply නොවෙන්න දැම්ම")
+    bot.send_message(message.chat.id,"හරි හරි මම දන්නව ඔයා හිමේෂ කියල \n ඔන්න reply නොවෙන්න දැම්ම")
   
+
 @bot.message_handler(commands=["photo"])
 def sending_photo(message):
-    bot.send_photo(message.chat_id, "https://telegra.ph/file/ea3c0c95f61ff876f060e.png")
+    bot.send_photo(message.chat_id, "https://telegra.ph/file/04d1140733986a224f328.jpg")
     
 bot.polling()
 
